@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Video_Board_Server:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="by.andrewblinets.videoboardserver-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Video_Board_Server:war exploded" />
+    </root>
+  </artifact>
+</component>
