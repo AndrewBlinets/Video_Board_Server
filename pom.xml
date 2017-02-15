@@ -23,6 +23,7 @@
         <spring-security.version>4.2.1.RELEASE</spring-security.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <junit.version>3.8.1</junit.version>
+        <jstl.version>1.2</jstl.version>
     </properties>
 
 
@@ -42,7 +43,12 @@
             <version>${spring-security.version}</version>
         </dependency>
 
-
+        <!-- index -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
 
         <!-- Web -->
 
