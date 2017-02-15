@@ -5,11 +5,11 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 /**
- * Created by Андрей on 10.02.2017.
+ * Created by Андрей on 14.02.2017.
  */
 
 @Entity
-@Table(name = "User_account")
+@Table(name = "User_table")
 public class User_account {
 
     @Id
@@ -17,30 +17,41 @@ public class User_account {
     @GenericGenerator(name = "increment", strategy = "increment")
     private long Id_user;
 
-    @Column(name = "Name_user", nullable = false)
-    private String Name_user;
 
-    @Column(name = "Telephone", nullable = false)
-    private String Telephone;
+    @OneToOne
+    @JoinColumn(name = "Id_account")
+    private Account id_account;
+
+
+    @Column(name = "Name_User", nullable = false)
+    private String Name;
+
+    @Column(name = "Surname_user", nullable = false)
+    private String Surname;
+
+    @Column(name = "phone", nullable = false)
+    private String Phone;
 
     @Column(name = "Email", nullable = false)
     private String Email;
 
-    @Column(name = "Password", nullable = false)
-    private String Password;
-
     @Column(name = "Country", nullable = false)
-    private String Country;
+    private long Country;
 
     @Column(name = "City", nullable = false)
-    private String City;
+    private long City;
 
     @Column(name = "Language", nullable = false)
-    private String Language;
+    private long Language;
 
     @Column(name = "Rating", nullable = false)
-    private String Rating;
+    private long Rating;
 
+    @Column(name = "Datareg", nullable = false)
+    private String Data_time_reg;
+
+    @Column(name = "Token_kod")
+    private String Token;
 
     public User_account() {
     }
@@ -53,20 +64,36 @@ public class User_account {
         Id_user = id_user;
     }
 
-    public String getName_user() {
-        return Name_user;
+    public Account getId_account() {
+        return id_account;
     }
 
-    public void setName_user(String name_user) {
-        Name_user = name_user;
+    public void setId_account(Account id_account) {
+        this.id_account = id_account;
     }
 
-    public String getTelephone() {
-        return Telephone;
+    public String getName() {
+        return Name;
     }
 
-    public void setTelephone(String telephone) {
-        Telephone = telephone;
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getSurname() {
+        return Surname;
+    }
+
+    public void setSurname(String surname) {
+        Surname = surname;
+    }
+
+    public String getPhone() {
+        return Phone;
+    }
+
+    public void setPhone(String phone) {
+        Phone = phone;
     }
 
     public String getEmail() {
@@ -77,43 +104,51 @@ public class User_account {
         Email = email;
     }
 
-    public String getPassword() {
-        return Password;
-    }
-
-    public void setPassword(String password) {
-        Password = password;
-    }
-
-    public String getCountry() {
+    public long getCountry() {
         return Country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(long country) {
         Country = country;
     }
 
-    public String getCity() {
+    public long getCity() {
         return City;
     }
 
-    public void setCity(String city) {
+    public void setCity(long city) {
         City = city;
     }
 
-    public String getLanguage() {
+    public long getLanguage() {
         return Language;
     }
 
-    public void setLanguage(String language) {
+    public void setLanguage(long language) {
         Language = language;
     }
 
-    public String getRating() {
+    public long getRating() {
         return Rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(long rating) {
         Rating = rating;
+    }
+
+    public String getData_time_reg() {
+        return Data_time_reg;
+    }
+
+    public void setData_time_reg(String data_time_reg) {
+        Data_time_reg = data_time_reg;
+    }
+
+    public String getToken() {
+        return Token;
+    }
+
+    public void setToken(String token) {
+        Token = token;
     }
 }

@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 
 @Controller
-@RequestMapping("/hello")
+@RequestMapping("/")
 public class Advertisement {
 
-    @RequestMapping(value = "/get", method = RequestMethod.GET)
+    @RequestMapping( method = RequestMethod.GET)
     @ResponseBody
     public String getRem(ModelMap model)
     {
