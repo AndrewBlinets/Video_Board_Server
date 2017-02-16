@@ -40,6 +40,7 @@ public class Advertisement {
     private String URL;
 
     @Column(name = "Add_date", nullable = false)
+   // @Temporal(TemporalType.TIMESTAMP)
     private Date Add_date;
 
     @Column(name = "Rating", nullable = false)

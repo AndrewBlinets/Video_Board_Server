@@ -17,6 +17,7 @@ public class ApplicationInitializer implements WebApplicationInitializer {
 
     private final static  String DISTPACHER = "dispatcher";
 
+
     public void onStartup(ServletContext servletContext) throws ServletException {
 
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
