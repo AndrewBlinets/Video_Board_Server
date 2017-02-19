@@ -25,6 +25,7 @@
         <junit.version>3.8.1</junit.version>
         <jstl.version>1.2</jstl.version>
         <jackson-databind.version>2.5.3</jackson-databind.version>
+        <spring.test>3.2.4.RELEASE</spring.test>
     </properties>
 
 
@@ -114,6 +115,12 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.test}</version>
             <scope>test</scope>
         </dependency>
 
