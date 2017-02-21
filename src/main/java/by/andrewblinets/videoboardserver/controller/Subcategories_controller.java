@@ -2,7 +2,7 @@ package by.andrewblinets.videoboardserver.controller;
 
 
 import by.andrewblinets.videoboardserver.entity.Subcategory;
-import by.andrewblinets.videoboardserver.service.Subcategoty_service;
+import by.andrewblinets.videoboardserver.service.service_interfase.Subcategoty_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -20,7 +20,7 @@
         <commons-dbcp2.version>2.1.1</commons-dbcp2.version>
         <jta.version>1.1</jta.version>
         <jackson-databind.version>2.5.3</jackson-databind.version>
-        <spring-security.version>4.2.1.RELEASE</spring-security.version>
+        <spring.version>4.2.1.RELEASE</spring.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <junit.version>3.8.1</junit.version>
         <jstl.version>1.2</jstl.version>
@@ -43,13 +43,21 @@
             <version>${jackson-databind.version}</version>
         </dependency>
 
-        <!-- Spring security -->
-
-
+        <!-- Spring Security -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
-            <version>${spring-security.version}</version>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
         <!-- index -->

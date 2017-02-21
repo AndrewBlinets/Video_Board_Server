@@ -16,6 +16,5 @@
 
 <body>
 <h1>Admin_panel</h1>
-
 </body>
 </html>

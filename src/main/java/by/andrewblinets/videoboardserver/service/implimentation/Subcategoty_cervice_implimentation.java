@@ -1,7 +1,8 @@
-package by.andrewblinets.videoboardserver.service;
+package by.andrewblinets.videoboardserver.service.implimentation;
 
 import by.andrewblinets.videoboardserver.entity.Subcategory;
 import by.andrewblinets.videoboardserver.repository.Subcategories_repository;
+import by.andrewblinets.videoboardserver.service.service_interfase.Subcategoty_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

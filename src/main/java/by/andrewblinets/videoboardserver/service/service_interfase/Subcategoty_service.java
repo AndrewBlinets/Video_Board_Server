@@ -1,4 +1,4 @@
-package by.andrewblinets.videoboardserver.service;
+package by.andrewblinets.videoboardserver.service.service_interfase;
 
 
 import by.andrewblinets.videoboardserver.entity.Subcategory;
