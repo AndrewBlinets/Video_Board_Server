@@ -27,8 +27,6 @@ public class Account {
     @Column(name = "Password", nullable = false)
     private String Password;
 
-    @Transient
-    private String confirmPassword;
 
     @ManyToMany
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),
@@ -68,14 +66,6 @@ public class Account {
 
     public void setPassword(String password) {
         Password = password;
-    }
-
-    public String getConfirmPassword() {
-        return confirmPassword;
-    }
-
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
     }
 
     public Set<Role> getRole() {

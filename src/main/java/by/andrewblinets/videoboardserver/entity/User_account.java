@@ -3,6 +3,7 @@ package by.andrewblinets.videoboardserver.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by Андрей on 14.02.2017.
@@ -48,7 +49,8 @@ public class User_account {
     private long Rating;
 
     @Column(name = "Datareg", nullable = false)
-    private String Data_time_reg;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date Data_time_reg;
 
     @Column(name = "Token_kod")
     private String Token;
@@ -136,11 +138,11 @@ public class User_account {
         Rating = rating;
     }
 
-    public String getData_time_reg() {
+    public Date getData_time_reg() {
         return Data_time_reg;
     }
 
-    public void setData_time_reg(String data_time_reg) {
+    public void setData_time_reg(Date data_time_reg) {
         Data_time_reg = data_time_reg;
     }
 
